@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="container my-5">
+    <h1 class="text-center">Travel Map</h1>
+    <form action="/generate-map" method="post">
+        <div class="mb-3">
+            <label for="source" class="form-label">Source:</label>
+            <input type="text" name="source" id="source" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="destination" class="form-label">Destination:</label>
+            <input type="text" name="destination" id="destination" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Map</button>
+    </form>
+</body>
+</html>
